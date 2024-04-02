@@ -70,11 +70,21 @@ static int cmd_si(char *args) {
 
 static int cmd_info(char *args) {
   char subcmd;
-  sscanf(args, "%c", &subcmd);
-  if(subcmd == 'r') {
-    puts("ok");
-    isa_reg_display();
 
+  if(args == NULL) {
+    puts("Usage: info SUBCMD");
+  }
+  else {
+    sscanf(args, "%c", &subcmd);
+    if(subcmd == 'r') {
+      isa_reg_display();
+    }
+    else if(subcmd == 'w') {
+      // TODO
+    }
+    else {
+      puts("Unknown subcmd, only 'r' or 'w'");
+    }
   }
   
   return 0;
