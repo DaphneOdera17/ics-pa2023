@@ -27,7 +27,7 @@ void isa_reg_display() {
   int length = ARRLEN(regs);
 
   for(int i = 0; i < length; i ++) {
-    printf("%-8s%-#20x%-20u\n", regs[i], cpu.gpr[i], cpu.gpr[i]);
+    printf("%-8s%-#20x%-20lld\n", regs[i], cpu.gpr[i], (long long int)cpu.gpr[i]);
   }
 }
 
