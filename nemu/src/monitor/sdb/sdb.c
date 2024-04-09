@@ -68,6 +68,23 @@ static int cmd_si(char *args) {
   return 0;
 }
 
+/*
+static int cmd_x(char *args) {
+  char *arg1 = strtok(NULL, " ");
+  if(arg1 == NULL) {
+    puts("Usage: x N EXPR");
+    return 0;
+  }
+  char *arg2 = strtok(NULL, " ");
+  if(arg2 == NULL) {
+    puts("Usage: x N EXPR");
+    return 0;
+  }
+  
+
+}
+*/
+
 static int cmd_info(char *args) {
   char subcmd;
 
@@ -81,7 +98,7 @@ static int cmd_info(char *args) {
     }
     else if(subcmd == 'w') {
       // TODO
-      
+
     }
     else {
       puts("Unknown subcmd, only 'r' or 'w'");
