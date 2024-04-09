@@ -80,9 +80,33 @@ static int cmd_x(char *args) {
     puts("Usage: x N EXPR");
     return 0;
   }
-  
 
 }
+
+static int cmd_w(char *args) {
+  if(args == NULL) {
+    puts("Usage: w EXPR");
+  }
+
+  return 0;
+}
+
+static int cmd_d(char *args) {
+  if(args == NULL) {
+    puts("Usage: d N");
+  }
+
+  return 0;
+}
+
+static int cmd_p(char *agrs) {
+  if(args == NULL) {
+    puts("Usage: p EXPR);
+  }
+
+  return 0;
+}
+
 */
 
 static int cmd_info(char *args) {
