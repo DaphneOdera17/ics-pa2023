@@ -81,6 +81,7 @@ static int cmd_info(char *args) {
     }
     else if(subcmd == 'w') {
       // TODO
+      
     }
     else {
       puts("Unknown subcmd, only 'r' or 'w'");
